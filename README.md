@@ -72,7 +72,7 @@ RegisterNumber:  212221240041
 */
 
 SIPO
-
+```
 module sipo(si,clk,po);
 input si,clk;
 output [0:7]po;
@@ -83,9 +83,9 @@ temp = {temp[0:6],si};
 end
 assign po=temp;
 endmodule
-
+```
 PISO
-
+```
 module sipo(Clk, Parallel_In,load, Serial_Out);
 input Clk,load;
 input [3:0]Parallel_In;
@@ -102,9 +102,9 @@ tmp<={tmp[2:0],1'b0};
 end
 end
 endmodule
-
+```
 PIPO
-
+```
 module sipo(pi,clk,po);
 input clk;
 input[3:0]pi;
@@ -114,7 +114,7 @@ begin
 po = pi;
 end 
 endmodule
-
+```
 ### RTL LOGIC  REGISTERS   
 
 #### SIPO
